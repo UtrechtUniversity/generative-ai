@@ -1,42 +1,30 @@
-# re-simple-python-project
+# Generative AI for research data processing tasks
 
-This simple project structure template repository is adapted from the [Good Enough Project](https://github.com/bvreede/good-enough-project) Cookiecutter template by Barbara Vreede (2019).
-If you plan to develop a package, check the [template repository for a Python package](https://github.com/UtrechtUniversity/re-python-package).
+This repository contains notebooks and data from an exploratory study of the use of generative AI in research data processing.
 
-## Usage
+We explore three research projects which involve complex data processing tasks: 
 
-Click "Use this template" at the top of this page to create a new repository with the same folder structure.
-
+1. **Seedlists**: We extract plant species names from historical seedlists (catalogues of seeds) published by botanical gardens. This is an *information extraction* task.  
+2. **Health Technology Assessment (HTA) documents**: We extract certain data points (name of drug, name of health indication, relative effectiveness, cost effectiveness, etc.) from documents published by HTA organisations in the EU. This is also an *information extraction* task. 
+3. **Kickstarter**: We assign industry codes to projects on the crowdfunding website Kickstarter. This is a *text classification* task.
+   
 ## Project Structure
-
-The project structure distinguishes three kinds of folders:
-- read-only (RO): not edited by either code or researcher
-- human-writeable (HW): edited by the researcher only.
-- project-generated (PG): folders generated when running the code; these folders can be deleted or emptied and will be completely reconstituted as the project is run.
-
 
 ```
 .
 ├── .gitignore
 ├── LICENSE
 ├── README.md
-├── requirements.txt
-├── data               <- All project data, ignored by git
-│   ├── processed      <- The final, canonical data sets for modeling. (PG)
-│   ├── raw            <- The original, immutable data dump. (RO)
-│   └── temp           <- Intermediate data that has been transformed. (PG)
-├── docs               <- Documentation notebook for users (HW)
-│   ├── manuscript     <- Manuscript source, e.g., LaTeX, Markdown, etc. (HW)
-│   └── reports        <- Other project reports and notebooks (e.g. Jupyter, .Rmd) (HW)
-├── results
-│   ├── figures        <- Figures for the manuscript or reports (PG)
-│   └── output         <- Other output for the manuscript or reports (PG)
-└── src                <- Source code for this project (HW)
+├── data               
+│   ├── seedlists     
+│   ├── hta      
+│   └── kickstarter           
+├── notebooks               
+│   ├── seedlists     
+│   ├── hta      
+│   └── kickstarter   
 
 ```
-
-## Add a citation file
-Create a citation file for your repository using [cffinit](https://citation-file-format.github.io/cff-initializer-javascript/#/)
 
 ## License
 
