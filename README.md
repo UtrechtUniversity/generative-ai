@@ -15,15 +15,15 @@ We explore three research projects which involve complex data processing tasks:
 ├── .gitignore
 ├── LICENSE
 ├── README.md
-├── data               
-│   ├── seedlists     
-│   ├── hta      
-│   └── kickstarter           
-├── notebooks               
-│   ├── seedlists     
-│   ├── hta      
-│   └── kickstarter   
-
+├── seedlists               
+│   ├── data         
+│   └── notebooks           
+├── hta               
+│   ├── data         
+│   └── notebooks   
+├── kickstarter               
+│   ├── data         
+│   └── notebooks 
 ```
 
 ## License
